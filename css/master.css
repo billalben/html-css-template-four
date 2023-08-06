@@ -1,3 +1,11 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
 * {
   box-sizing: border-box;
 }
@@ -55,8 +63,6 @@ ul {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.sidebar ul {}
-.sidebar ul li {}
 .sidebar ul li a {
   margin-bottom: 5px;
   transition: 0.3s;
@@ -69,7 +75,6 @@ ul {
 .sidebar ul li a.active {
   background-color: #f6f6f6;
 }
-.sidebar ul li a span {}
 @media (max-width: 767px) {
   .sidebar {
     width: 58px;
@@ -93,3 +98,71 @@ ul {
   }
 } */
 /* End Sidebar */
+/* Start Content */
+.content {
+  overflow: hidden;
+}
+.content .head .search::before {
+  /*
+  font-family: "Font Awesome 6 Free";
+  it is the same thing
+  */
+  font-family: var(--fa-style-family-classic);
+  font-family: var(--fa-style-family-classic);
+  content: "\f002";
+  font-weight: 900;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  font-size: 14px;
+  color: var(--grey-color);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.content .head .search input {
+  border: 1px solid #ccc;
+  margin-left: 5px;
+  padding-left: 30px;
+  width: 180px;
+  border-radius: 10px;
+  transition: width 0.3s;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  -ms-transition: width 0.3s;
+  -o-transition: width 0.3s;
+}
+.content .head .search input:focus {
+  /* outline-color: red; it will not work because we do above (outline: none;)*/
+  width: 210px;
+}
+.content .head .search input:focus::placeholder {
+  /* opacity: 0; */
+  color: transparent;
+}
+.content .head .icons .notification::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -5px;
+  right: -5px;
+  background-color: var(--red-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.content .head .icons img {
+  width: 32px;
+  height: 32px;
+  margin-left: 15px;
+}
+/* End Content */

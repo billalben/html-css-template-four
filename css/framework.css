@@ -1,3 +1,11 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
 /* Start Box */
 .d-flex {
   display: flex;
@@ -9,6 +17,9 @@
 /* Start Padding + Margin */
 .p-10 {
   padding: 10px;
+}
+.p-15 {
+  padding: 15px;
 }
 .p-20 {
   padding: 20px;
@@ -50,3 +61,15 @@
   -o-border-radius: 6px;
 }
 /* End Border */
+/* Start Width + Height */
+.w-full {
+  width: 100%;
+}
+/* End Width + Height */
+/* Start Components */
+.between-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* End Components */
