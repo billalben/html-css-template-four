@@ -13,6 +13,17 @@
 .align-center {
   align-items: center;
 }
+.d-grid {
+  display: grid;
+}
+.gap-20 {
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .block-mobile {
+    display: block;
+  }
+}
 /* End Box */
 /* Start Padding + Margin */
 .p-10 {
@@ -51,6 +62,11 @@
 .fs-14 {
   font-size: 14px;
 }
+@media (max-width: 767px) {
+  .txt-c-mobile {
+    text-align: center;
+  }
+}
 /* End Font */
 /* Start Border */
 .rad-6 {
@@ -59,6 +75,13 @@
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
+}
+.rad-10 {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 /* End Border */
 /* Start Width + Height */
