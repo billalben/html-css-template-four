@@ -422,3 +422,53 @@ ul {
   height: 50px;
 }
 /* End Latest Uploads */
+/* Start Last Project Progress Widget */
+.last-project ul::before {
+  content: "";
+  position: absolute;
+  background-color: var(--red-color);
+  left: 11px;
+  width: 2px;
+  height: 100%;
+}
+.last-project ul li::before {
+  content: "";
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: 15px;
+  z-index: 1;
+  outline: 2px solid var(--blue-color);
+  border: 2px solid white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.last-project ul li.done::before {
+  background-color: var(--blue-color);
+}
+.last-project ul li.current::before {
+  animation: change-color 0.8s infinite alternate;
+  -webkit-animation: change-color 0.8s infinite alternate;
+}
+.last-project .launch-icon {
+  position: absolute;
+  width: 140px;
+  right: 10px;
+  bottom: 10px;
+  opacity: 0.8;
+}
+/* End Last Project Progress Widget */
+/* Start Animation */
+@keyframes change-color {
+  from {
+    background-color: var(--blue-color);
+  }
+  to {
+    background-color: white;
+  }
+}
+/* End Animation */
