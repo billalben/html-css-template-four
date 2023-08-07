@@ -79,14 +79,29 @@
 .bg-blue {
   background-color: var(--blue-color);
 }
+.bg-orange {
+  background-color: var(--orange-color);
+}
+.bg-green {
+  background-color: var(--green-color);
+}
 .c-white {
   color: white;
 }
 .c-black {
   color: black;
 }
+.c-blue {
+  color: var(--blue-color);
+}
 .c-grey {
   color: var(--grey-color);
+}
+.c-orange {
+  color: var(--orange-color);
+}
+.c-green {
+  color: var(--green-color);
 }
 /* End Color */
 /* Start Position */
@@ -95,6 +110,9 @@
 }
 /* End Position */
 /* Start Font */
+.fw-bold {
+  font-weight: bold;
+}
 .txt-c {
   text-align: center;
 }
@@ -133,11 +151,25 @@
 .w-full {
   width: 100%;
 }
+.w-100 {
+  width: 100px;
+}
 .w-fit {
   width: fit-content;
 }
+.h-full {
+  height: 100%;
+}
+.h-100 {
+  height: 100px;
+}
 /* End Width + Height */
 /* Start Components */
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .between-flex {
   display: flex;
   align-items: center;
