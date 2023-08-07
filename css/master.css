@@ -412,5 +412,13 @@ ul {
 .latest-tasks .task-row .delete:hover {
   color: var(--red-color);
 }
-
 /* End Latest Tasks */
+/* Start Latest Uploads */
+.latest-uploads ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.latest-uploads ul li img {
+  width: 50px;
+  height: 50px;
+}
+/* End Latest Uploads */
