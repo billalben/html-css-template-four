@@ -110,22 +110,53 @@
         <!-- End Head -->
         <h1 class="p-relative">Dashboard</h1>
         <div class="wrapper d-grid gap-20">
+          <!-- Start Welcome Widget -->
           <div class="welcome bg-white rad-10 txt-c-mobile block-mobile">
             <div class="intro p-20 d-flex space-between bg-eee">
               <div>
                 <h2 class="m-0">Welcome</h2>
                 <p class="c-grey mt-5">Billal</p>
               </div>
-              <img src="imgs/welcome.png" alt="welcome" class="hide-mobile">
+              <img src="imgs/welcome.png" alt="welcome" class="hide-mobile" />
             </div>
-            <img src="imgs/avatar.png" alt="" class="avatar">
+            <img src="imgs/avatar.png" alt="" class="avatar" />
             <div class="body txt-c d-flex p-20 mt-20 mb-20 block-mobile">
-              <div>Billal Benz <span class="d-block c-grey fs-14 mt-10">Developer</span></div>
-              <div>80 <span class="d-block c-grey fs-14 mt-10">Projects</span></div>
-              <div>$850<span class="d-block c-grey fs-14 mt-10">Earned</span></div>
+              <div>
+                Billal Benz
+                <span class="d-block c-grey fs-14 mt-10">Developer</span>
+              </div>
+              <div>
+                80 <span class="d-block c-grey fs-14 mt-10">Projects</span>
+              </div>
+              <div>
+                $850<span class="d-block c-grey fs-14 mt-10">Earned</span>
+              </div>
             </div>
-            <a href="profile.html" class="visit d-block fs-14 rad-6 bg-blue c-white w-fit">Profile</a>
+            <a
+              href="profile.html"
+              class="visit d-block fs-14 bg-blue c-white w-fit btn-shape"
+              >Profile</a
+            >
           </div>
+          <!-- End Welcome Widget -->
+          <!-- Start Quick Draft Widget -->
+          <div class="quick-draft p-20 bg-white rad-10">
+            <h2 class="mt-0 mb-10">Quick Draft</h2>
+            <p class="mt-0 mb-20 c-grey fs-15">Write A Draft For Your Ideas</p>
+            <form>
+              <input
+                class="d-block mb-20 w-full p-10 b-none bg-eee rad-6"
+                type="text"
+                placeholder="Title"
+              />
+              <textarea
+                class="d-block mb-20 w-full p-10 b-none bg-eee rad-6"
+                placeholder="Your Thought"
+              ></textarea>
+              <input class="save d-block fs-14 bg-blue c-white b-none w-fit btn-shape" type="submit" value="Save" />
+            </form>
+          </div>
+          <!-- End Quick Draft Widget -->
         </div>
       </div>
     </div>
