@@ -575,6 +575,53 @@ ul {
   background-color: #0a66c2;
 }
 /* End Social Media Stats Widget */
+/* Start Projects Table */
+.projects .responsive-table {
+  overflow-x: auto;
+}
+.projects table {
+  min-width: 1000px;
+  border-spacing: 0;
+}
+.projects table td,
+.projects table th {
+  padding: 15px;
+}
+.projects tbody td {
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.projects tbody td:last-child {
+  border-right: 1px solid #eee;
+}
+.projects tbody tr {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.projects tbody tr:hover {
+  background-color: #faf7f7;
+}
+.projects table img {
+  background-color: white;
+  width: 32px;
+  height: 32px;
+  padding: 2px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.projects table img:not(:first-child) {
+  margin-left: -18px;
+}
+.projects table .label {
+  font-size: 13px;
+}
+/* End Projects Table */
 /* Start Animation */
 @keyframes change-color {
   from {
