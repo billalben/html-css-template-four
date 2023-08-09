@@ -189,6 +189,9 @@
 .b-none {
   border: none;
 }
+.border-ccc {
+  border: 1px solid #ccc;
+}
 .rad-half {
   border-radius: 50%;
   -webkit-border-radius: 50%;
