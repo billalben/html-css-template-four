@@ -219,19 +219,35 @@
             <p class="mt-0 mb-20 c-grey fs-15">Social Media Information</p>
             <div class="d-flex align-center mb-15">
               <i class="fa-brands fa-twitter center-flex c-grey"></i>
-              <input class="w-full" type="text" placeholder="Twitter Username">
+              <input
+                class="w-full"
+                type="text"
+                placeholder="Twitter Username"
+              />
             </div>
             <div class="d-flex align-center mb-15">
               <i class="fa-brands fa-facebook center-flex c-grey"></i>
-              <input class="w-full" type="text" placeholder="Facebook Username">
+              <input
+                class="w-full"
+                type="text"
+                placeholder="Facebook Username"
+              />
             </div>
             <div class="d-flex align-center mb-15">
               <i class="fa-brands fa-linkedin center-flex c-grey"></i>
-              <input class="w-full" type="text" placeholder="Linkedin Username">
+              <input
+                class="w-full"
+                type="text"
+                placeholder="Linkedin Username"
+              />
             </div>
             <div class="d-flex align-center mb-15">
               <i class="fa-brands fa-youtube center-flex c-grey"></i>
-              <input class="w-full" type="text" placeholder="Youtube Username">
+              <input
+                class="w-full"
+                type="text"
+                placeholder="Youtube Username"
+              />
             </div>
           </div>
           <!-- End Social Info -->
@@ -240,31 +256,74 @@
             <h2 class="mt-0 mb-10">Widgets Control</h2>
             <p class="mt-0 mb-20 c-grey fs-15">Show/Hide Widgets</p>
             <div class="control d-flex align-center mb-15">
-              <input id="one" type="checkbox">
+              <input id="one" type="checkbox" />
               <label for="one">Quick Draft</label>
             </div>
             <div class="control d-flex align-center mb-15">
-              <input id="two" type="checkbox" checked>
+              <input id="two" type="checkbox" checked />
               <label for="two">Yearly Targets</label>
             </div>
             <div class="control d-flex align-center mb-15">
-              <input id="three" type="checkbox" checked>
+              <input id="three" type="checkbox" checked />
               <label for="three">Tickets Statistics</label>
             </div>
             <div class="control d-flex align-center mb-15">
-              <input id="four" type="checkbox">
+              <input id="four" type="checkbox" />
               <label for="four">Latest News</label>
             </div>
             <div class="control d-flex align-center mb-15">
-              <input id="five" type="checkbox">
+              <input id="five" type="checkbox" />
               <label for="five">Latest Tasks</label>
             </div>
             <div class="control d-flex align-center mb-15">
-              <input id="six" type="checkbox" checked>
+              <input id="six" type="checkbox" checked />
               <label for="six">Top Search Items</label>
             </div>
           </div>
           <!-- End Widget Control -->
+          <!-- Start Backup Manager -->
+          <div class="backup-control p-20 bg-white rad-10">
+            <h2 class="mt-0 mb-10">Backup Manager</h2>
+            <p class="mt-0 mb-20 c-grey fs-15">
+              Control Backup Time And Location
+            </p>
+            <div class="date d-flex align-center mb-15">
+              <input type="radio" name="time" id="daily" checked />
+              <label for="daily">Daily</label>
+            </div>
+            <div class="date d-flex align-center mb-15">
+              <input type="radio" name="time" id="weekly" checked />
+              <label for="weekly">Weekly</label>
+            </div>
+            <div class="date d-flex align-center mb-15">
+              <input type="radio" name="time" id="monthly" checked />
+              <label for="monthly">Monthly</label>
+            </div>
+            <div class="servers d-flex align-center txt-c">
+              <input type="radio" name="servers" id="server-one" />
+              <div class="server mb-15 rad-10 w-full">
+                <label class="d-block m-15" for="server-one">
+                  <i class="fa-solid fa-server d-block mb-10"></i>
+                  Megaman
+                </label>
+              </div>
+              <input type="radio" name="servers" id="server-two" checked/>
+              <div class="server mb-15 rad-10 w-full">
+                <label class="d-block m-15" for="server-two">
+                  <i class="fa-solid fa-server d-block mb-10"></i>
+                  Zero
+                </label>
+              </div>
+              <input type="radio" name="servers" id="server-three" />
+              <div class="server mb-15 rad-10 w-full">
+                <label class="d-block m-15" for="server-three">
+                  <i class="fa-solid fa-server d-block mb-10"></i>
+                  Sigma
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- End Backup Manager -->
         </div>
       </div>
     </div>
