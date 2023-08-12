@@ -355,7 +355,7 @@ ul {
 }
 /* End Tickets */
 /* Start Latest News */
-.latest-news .news-row:not(:last-of-type){
+.latest-news .news-row:not(:last-of-type) {
   border-bottom: 1px solid #eee;
 }
 .latest-news .news-row img {
@@ -823,7 +823,7 @@ ul {
   -ms-transition: 0.2s;
   -o-transition: 0.2s;
 }
-.backup-control .servers .server label{
+.backup-control .servers .server label {
   cursor: pointer;
 }
 .backup-control .servers input[type="radio"]:checked + .server {
@@ -1225,6 +1225,47 @@ ul {
   -o-transform: translateY(-50%);
 }
 /* End Friends Page */
+/* Start Files Page */
+.files-page .files-stats {
+  min-width: 260px;
+}
+.files-page .files-stats .icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.files-page .files-stats .size {
+  margin-left: auto;
+}
+.files-page .files-stats .blue {
+  background-color: rgb(0 117 255 / 20%);
+}
+.files-page .files-stats .green {
+  background-color: rgb(34 197 94 / 20%);
+}
+.files-page .files-stats .red {
+  background-color: rgb(244 67 54 / 20%);
+}
+.files-page .files-stats .orange {
+  background-color: rgb(245 158 11 / 20%);
+}
+.files-page .files-stats .upload {
+  margin: 15px auto 0;
+  padding: 10px 15px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.files-page .files-stats .upload:hover {
+  background-color: var(--blue-alt-color);
+}
+.files-page .files-stats .upload:hover i {
+  animation: go-up 0.8s infinite;
+  -webkit-animation: go-up 0.8s infinite;
+}
+/* End Files Page */
 /* Start Animation */
 @keyframes change-color {
   from {
@@ -1232,6 +1273,23 @@ ul {
   }
   to {
     background-color: white;
+  }
+}
+@keyframes go-up {
+  0%,
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
   }
 }
 /* End Animation */

@@ -195,6 +195,9 @@
 .border-ccc {
   border: 1px solid #ccc;
 }
+.border-eee {
+  border: 1px solid #eee;
+}
 .rad-half {
   border-radius: 50%;
   -webkit-border-radius: 50%;
